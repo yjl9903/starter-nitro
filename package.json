@@ -1,0 +1,51 @@
+{
+  "name": "name",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/yjl9903/[name]#readme",
+  "bugs": {
+    "url": "https://github.com/yjl9903/[name]/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjl9903/[name].git"
+  },
+  "license": "MIT",
+  "author": "XLor",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nitropack build",
+    "dev": "nitropack dev",
+    "format": "prettier --write routes/**/*.ts test/**/*.ts",
+    "preview": "miniflare .output/server/index.mjs --site .output/public",
+    "release": "bumpp --commit --push --tag",
+    "test": "vitest",
+    "preversion": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "bumpp": "^7.1.1",
+    "cross-env": "^7.0.3",
+    "miniflare": "^2.4.0",
+    "nitropack": "^0.3.8",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.6",
+    "vitest": "^0.10.0"
+  },
+  "packageManager": "pnpm@6.32.11"
+}
