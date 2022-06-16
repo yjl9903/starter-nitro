@@ -37,7 +37,7 @@
     "preversion": "pnpm build"
   },
   "devDependencies": {
-    "@types/node": "^17.0.40",
+    "@types/node": "^18.0.0",
     "bumpp": "^7.1.1",
     "cross-env": "^7.0.3",
     "miniflare": "^2.5.0",
