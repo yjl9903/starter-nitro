@@ -41,7 +41,7 @@
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.3",
     "miniflare": "^2.5.1",
-    "nitropack": "^0.4.8",
+    "nitropack": "^0.4.9",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
     "vite": "^2.9.13",
